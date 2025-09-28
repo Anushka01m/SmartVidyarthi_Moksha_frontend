@@ -1,0 +1,149 @@
+/* THEMES */
+body.light-theme { background: #fffae3; color: #222; }
+body.dark-theme { background: #181828; color: #fff; }
+body.space-theme {
+    background: radial-gradient(ellipse at top left, #202896 0%, #181847 60%), url("/static/space_stars.svg");
+    color: #fff;
+}
+
+/* MAIN CARD STYLES FOR VIEWS */
+.kid-card {
+    border-radius: 1rem;
+    padding: 1.5rem;
+    background: #ffe4ec;
+    box-shadow: 0 2px 8px #e9e9ec;
+    font-size: 1.2em;
+    margin: 1.5em 0;
+}
+
+/* CHAT */
+.chat-box {
+    max-height: 220px;
+    overflow-y: auto;
+    margin-bottom: 1em;
+}
+.chat-bubble {
+    margin: 8px 2px;
+    padding: 8px 16px;
+    border-radius: 19px;
+    font-size: 1em;
+    display: inline-block;
+    max-width: 75%;
+}
+.user { background: #e5e7fa; align-self: flex-end; }
+.bot { background: #dafbf8; align-self: flex-start; }
+.mascot-thinking { animation: mascot-wave 1s infinite; }
+@keyframes mascot-wave { 0%{transform:rotate(0);} 50%{transform:rotate(-18deg);} 100%{transform:rotate(0);} }
+
+/* AVATARS, BADGES, MASCOTS */
+.badge-img { width: 40px; margin: 0 8px; }
+.selected-mascot { border: 2px solid #94d7f7; border-radius: 50%; background: #f0f7fa; }
+.mascot-cheer { text-align: center; margin: 1em 0; }
+.mascot-cheer img { vertical-align: middle; }
+
+/* TABLES */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    text-align: left;
+}
+th {
+    background: #bee6ff;
+    font-weight: bold;
+}
+tr:nth-child(even) { background: #f9f9f9; }
+
+/* BUTTONS */
+button {
+    padding: 0.4em 1.1em;
+    margin: 2px;
+    font-size: 1em;
+    border-radius: 6px;
+    border: none;
+    background: #96cdf4;
+    color: #163d4d;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+button:hover { background: #66a1c4; }
+
+/* INPUTS */
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    padding: 0.4em;
+    border-radius: 5px;
+    border: 1px solid #cce;
+    font-size: 1em;
+    margin-bottom: 0.6em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ALERTS */
+.alert {
+    padding: 12px 16px;
+    background: #f2ffe6;
+    border-left: 6px solid #7fb772;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+.alert small { color: #333; font-size: 0.98em; }
+
+/* ACCESSIBILITY */
+body.dyslexia-font { font-family: 'OpenDyslexic', Arial, sans-serif; font-size: 1.2em; }
+.dyslexia-btn { background: #ffe53d; color: #554e00; border-radius: 7px; }
+
+/* GENERAL LINKS */
+a {
+    color: #3772c5;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* COMMUNITY SUGGESTIONS & VOTING */
+ul { padding-left: 1.3em; }
+li { margin-bottom: 0.2em; }
+
+.ai-credit {
+    margin-top: 1.5em;
+    padding: 0.5em 1em;
+    background: #f3fafc;
+    border-left: 4px solid #7fbedf;
+    font-size: 0.97em;
+    border-radius: 6px;
+}
+
+footer {
+    background: #edf6ff;
+    color: #333;
+    text-align: center;
+    padding: 0.7em 0;
+    margin-top: 2em;
+    font-size: 0.95em;
+}
+
+/* SCROLLBAR FOR CHAT */
+.chat-box::-webkit-scrollbar {
+    width: 6px;
+}
+.chat-box::-webkit-scrollbar-thumb {
+    background: #a3caef;
+    border-radius: 3px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .kid-card {
+        font-size: 1em;
+        padding: 0.8em;
+    }
+    table th, table td {
+        padding: 7px 8px;
+    }
+}
