@@ -1,0 +1,10 @@
+<!-- SVG / PNG image showing a space background with stars -->
+<svg width="240" height="120" viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="120" fill="#202896" />
+  <circle cx="40" cy="35" r="2" fill="#fff"/>
+  <circle cx="120" cy="20" r="2.5" fill="#fff"/>
+  <circle cx="200" cy="80" r="3" fill="#fff"/>
+  <circle cx="160" cy="60" r="2" fill="#fff"/>
+  <circle cx="80" cy="90" r="3" fill="#fff"/>
+  <circle cx="200" cy="30" r="2" fill="#ffe4ec"/>
+</svg>
